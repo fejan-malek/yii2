@@ -153,7 +153,7 @@ class BaseObjectTest extends TestCase
     public function testGetClassName(): void
     {
         $object = $this->object;
-        $this->assertSame(get_class($object), $object::class);
+        $this->assertSame(get_class($object), $object::className());
     }
 
     public function testReadingWriteOnlyProperty(): void
